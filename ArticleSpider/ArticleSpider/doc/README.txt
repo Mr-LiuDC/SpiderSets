@@ -3,3 +3,8 @@
     title = response.xpath('//div[@class="entry-header"]/h1/text()')
     title.extract()     # 取值
     title.extract()[0]  # extract()后是一个数组。
+    title = response.xpath('//div[@class="entry-header"]/h1/text()').extract()[0]
+
+
+scrapy shell proxy settings
+    set http_proxy=http://proxy_addr:port
